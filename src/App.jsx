@@ -1,11 +1,15 @@
+
 import React from "react";
-import "./App.css";
+import "./index.css";
+import Header from "./components/Header.jsx";
+import Landing from "./components/Landing.jsx";
 
 function App() {
 
   return (
     <>
-      <div className="bg-neutral-300 rounded-2xl px-2 py-3 cursor-pointer">hi</div>
+      <Header/>
+      <Landing/>
     </>
   ); 
 } 
