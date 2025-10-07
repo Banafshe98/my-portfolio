@@ -1,5 +1,6 @@
 import React from "react";
 import Person from "../assets/person.png";
+import Personsquare from '../assets/Personsquare.png'
 import RightArrow from "../assets/svgs/RightArrow.svg";
 
 function Landing() {
@@ -22,7 +23,12 @@ function Landing() {
         <div className="sm:pr-8 py-6">
           <img
             src={Person}
-            className="sm:rounded-tr-full sm:py-10 sm:rounded-br-full md:px-20  mx-auto rounded-full"
+            className="md:block hidden  md:rounded-br-full md:rounded-tr-full"
+            alt="Banafshe Yazdani's Avatar"
+          />
+           <img
+            src={Personsquare}
+            className="block md:hidden sm:py-10 sm:rounded-br-full p-10 mx-auto rounded-full"
             alt="Banafshe Yazdani's Avatar"
           />
         </div>
