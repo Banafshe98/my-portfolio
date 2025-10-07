@@ -8,22 +8,22 @@ function Landing() {
     <>
       <section className="bg-black text-white p-3 py-12 h-full w-10/12 mx-auto my-16 rounded-md overflow-x-hidden">
         <div className="w-fit mx-auto">
-          <div className="text-[clamp(2rem,10vw,6rem)] md:text-[5vh]  leading-tight font-extrabold text-center text-wrap md:text-nowrap px-2 sm:px-4 md:px-6">
+          <div className="text-[clamp(2rem,10vw,6rem)] md:text-[5vh] lg:text-[10vh]  leading-tight font-extrabold text-center text-wrap md:text-nowrap px-2 sm:px-4 md:px-6">
             <p >FRONT-END DEVELOPER</p>
           </div>
-          <div className="flex justify-center gap-3 max-w-[1200px]">
-            <div className="hidden sm:visible text-wrap max-w-[200px] md:max-w-[600px] sm:max-w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque eligendi cum architecto id excepturi ex libero modi placeat distinctio, et veniam, at quos atque, impedit amet est! Praesentium, error.</div>
-            <div className="hidden sm:visible max-w-[200px] sm:max-w-[250px] md:max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos deserunt, quasi cumque maiores illum molestiae blanditiis quisquam soluta quas?</div>
+          <div className="flex justify-around gap-3 mb-6">
+            <div className="hidden lg:flex text-wrap lg:w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque eligendi cum architecto id excepturi ex libero modi placeat distinctio, et veniam, at quos atque, impedit amet est! Praesentium, error.</div>
+            <div className="hidden md:flex md:w-[320px] lg:w-[400px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos deserunt, quasi cumque maiores illum molestiae blanditiis quisquam soluta quas?</div>
             <div className="flex gap-2 items-center mt-6">
-              <p className="text-sm text-nowrap font-bold cursor-pointer">GET IN TOUCH</p>
-              <img className="cursor-pointer text-white" src={RightArrow} />
+              <p className="text-sm text-nowrap font-bold cursor-pointer w-[110px]">GET IN TOUCH</p>
+              <img className="cursor-pointer text-white transition-all duration-300 ease-in-out lg:hover:ml-3" src={RightArrow} />
             </div>
           </div>
         </div>
-        <div className="sm:pr-8 py-6">
+        <div>
           <img
             src={Person}
-            className="md:block hidden  md:rounded-br-full md:rounded-tr-full"
+            className="md:block hidden md:rounded-br-full md:rounded-tr-full"
             alt="Banafshe Yazdani's Avatar"
           />
            <img
