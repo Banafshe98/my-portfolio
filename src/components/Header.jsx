@@ -13,24 +13,26 @@ export default function Header() {
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center duration-500 transition-all ease-in-out lg:gap-6">
             <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-              <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-                <a href="#" className="flex items-center hover:font-bold ">
-                  About me
-                </a>
+              <a href="#" className="flex items-center hover:font-bold ">
+                About me
+              </a>
+            </li>
+            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600 ">
+              <a href="#" className="flex items-center hover:font-bold">
+                Projects
+              </a>
+            </li>
+            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600 ">
+              <a href="#" className="flex items-center hover:font-bold">
+                Skills
+              </a>
+            </li>
 
-                <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600 ">
-                  <a href="#" className="flex items-center hover:font-bold">
-                    Projects
-                  </a>
-                </li>
-                <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600 ">
-                  <a href="#" className="flex items-center hover:font-bold">
-                    Skills
-                  </a>
-                </li>
-                
-              </li>
-              <a href="#" className="flex items-center hover:font-bold duration-500">
+            <li>
+              <a
+                href="#"
+                className="flex items-center hover:font-bold hover:scale-110 duration-400"
+              >
                 GitHub Account
               </a>
             </li>
@@ -46,11 +48,11 @@ export default function Header() {
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>

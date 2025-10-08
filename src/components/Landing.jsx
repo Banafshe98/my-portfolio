@@ -23,7 +23,7 @@ function Landing() {
         <div>
           <img
             src={Person}
-            className="md:block hidden md:rounded-br-full md:rounded-tr-full"
+            className="md:block lg:ml-16 hidden md:rounded-br-full md:rounded-tr-full"
             alt="Banafshe Yazdani's Avatar"
           />
            <img
