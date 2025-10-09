@@ -6,7 +6,7 @@ import RightArrow from "../assets/svgs/RightArrow.svg";
 function Landing() {
   return (
     <>
-      <section className="bg-black text-white p-3 py-12 h-full mx-auto my-16 rounded-md overflow-x-hidden">
+      <section className="bg-black text-white lg:px-20 md:px-10 py-12 h-full mx-auto my-16 overflow-x-hidden">
         <div className="w-full mx-auto">
           <div className="text-[clamp(2rem,10vw,6rem)] md:text-[5vh] lg:text-[11vh] w-[80%] mx-auto leading-tight font-extrabold text-center text-wrap md:text-nowrap px-2 sm:px-4 md:px-6">
             <p >FRONT-END DEVELOPER</p>
