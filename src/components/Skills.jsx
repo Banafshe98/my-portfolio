@@ -10,27 +10,27 @@ function Skills() {
         src={Arrowdown}
         alt=""
       />
-      <div class="bg-cyan-950 text-blue-400 py-12 flex items-center justify-center px-4 ">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-6xl text-center  gap-4 cursor-pointer">
-          <div class="col-span-2 sm:col-span-2 bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+      <div className="bg-cyan-950 text-blue-400 py-12 flex items-center justify-center px-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-6xl text-center  gap-4 cursor-pointer">
+          <div className="col-span-2 sm:col-span-2 bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             1
           </div>
-          <div class="bg-stone-100 sm:row-span-3  p-10 rounded duration-400 ease-in-out transition-all hover:bg-orange-300">
+          <div className="bg-stone-100 sm:row-span-3  p-10 rounded duration-400 ease-in-out transition-all hover:bg-orange-300">
             2
           </div>
-          <div class="bg-stone-100 sm:row-span-4 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+          <div className="bg-stone-100 sm:row-span-4 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             3
           </div>
-          <div class="bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+          <div className="bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             4
           </div>
-          <div class="bg-stone-100 sm:row-span-2 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+          <div className="bg-stone-100 sm:row-span-2 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             6
           </div>
-          <div class="bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+          <div className="bg-stone-100 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             7
           </div>
-          <div class="bg-stone-100 sm:col-span-3 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
+          <div className="bg-stone-100 sm:col-span-3 p-10 rounded hover:bg-orange-300 duration-400 ease-in-out transition-all">
             7
           </div>
         </div>
