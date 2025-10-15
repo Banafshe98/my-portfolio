@@ -35,12 +35,12 @@ export default function Header() {
             </li>
 
             <li>
-              <a
+              <Link to="https://github.com/Banafshe98"
                 href="#"
                 className="flex items-center hover:font-bold hover:scale-110 duration-400"
               >
                 GitHub Account
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
