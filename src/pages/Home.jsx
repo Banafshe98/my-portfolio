@@ -8,7 +8,6 @@ import Projects from '../components/Projects'
 function Home() {
   return (
     <>
-    <Header/>
     <Landing/>
     <Skills/>
     <Projects/>
