@@ -1,47 +1,60 @@
-import React from "react";
-import RightArrow from "../assets/svgs/RightArrow.svg";
+import React ,  { useRef } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
 
 function Projects() {
-  const [sliderRef, instanceRef] = useKeenSlider({
+    const timer = useRef();
+  const [sliderRef] = useKeenSlider(
+    {
     loop: true,
+    renderMode: "performance",
     slides: {
       perView: 1,
       spacing: 15,
     },
     breakpoints: {
       "(min-width: 768px)": {
-        slides: { perView: 2, spacing: 20 },
+        slides: { perView: 2, spacing: 12},
       },
       "(min-width: 1024px)": {
         slides: { perView: 4, spacing: 25 },
       },
     },
-  });
-
+        created(s) {
+      startAutoplay(s);
+    },
+    dragStarted(s) {
+      stopAutoplay();
+    },
+    animationEnded(s) {
+      startAutoplay(s);
+    },
+  }
+);
+ function startAutoplay(s) {
+    stopAutoplay(); // clear old timer
+    timer.current = setInterval(() => {
+      s.next();
+    }, 2000); // change slide every 3s
+  }
+    function stopAutoplay() {
+    clearInterval(timer.current);
+  }
 
   return (
-    <>
-      <div
+    <div className=" bg-black py-16 mt-36">
+      <div 
+      
         ref={sliderRef}
-        className="keen-slider bg-black grid-cols-1 lg:grid-cols-4 md:grid-cols-4 lg:gap-3 gap-6 text-center cursor-pointer grid py-16 mx-auto px-4 lg:px-60 sm:px-10"
+        className="keen-slider text-center cursor-pointer max-w-11/12 mx-auto"
       >
-        <div className="keen-slider__slide bg-white rounded-md p-6 hover:bg-gray-300 transition-all ease-in-out duration-500">
-          1
-        </div>
-        <div className="keen-slider__slide bg-white rounded-md p-6  hover:bg-gray-300 transition-all ease-in-out duration-500">
-          2
-        </div>
-        <div className="keen-slider__slide bg-white rounded-md p-6  hover:bg-gray-300 transition-all ease-in-out duration-500">
-          3
-        </div>
-        <div className="keen-slider__slide bg-white rounded-md p-6  hover:bg-gray-300 transition-all ease-in-out duration-500">
-          4
-        </div>
-        <img className="absolute right-8 top-1/2 w-10 h-10 cursor-pointer hover:scale-110 transition-transform bg-red-600" src={RightArrow} onClick={()=>slider.current?.next()} />
+        {[1,2,3,4,5,6,7].map((n)=> (<div key={n} className="keen-slider__slide bg-white rounded-md p-6 transition-all ease-in-out duration-500">
+          {n}
+        </div>)
+        )}
+       
       </div>
-    </>
+    </div>
   );
 }
 
