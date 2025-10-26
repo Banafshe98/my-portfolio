@@ -4,7 +4,7 @@ import Arrowdown from "../assets/gifs/Arrowdown.gif";
 function Skills() {
   return (
     <>
-      <p className="text-center py-16 text-3xl pt-0">SKILLS</p>
+      <p className="text-center pb-16 text-3xl pt-0">SKILLS</p>
       <img
         className="mx-auto md:w-[5%] lg:w-[2%] w-[8%] cursor-pointer -mt-10 -mb-4 p-0 z-999"
         src={Arrowdown}

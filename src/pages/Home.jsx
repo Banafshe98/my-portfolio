@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
 import Landing from '../components/Landing'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
+import Quotes from '../components/Quotes'
 
 function Home() {
   return (
@@ -11,7 +11,9 @@ function Home() {
     <Landing/>
     <Skills/>
     <Projects/>
+    <Quotes/>
     <Footer/>
+    
     </>
   )
 }
