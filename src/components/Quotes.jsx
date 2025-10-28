@@ -6,8 +6,7 @@ function Quotes() {
   const [author, setAuthor] = useState("");
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function fetchQuote() {
+   async function fetchQuote() {
       try {
         const res = await fetch("https://api.realinspire.live/v1/quotes/random");
         if (!res.ok) throw new Error("Network issues😢")
@@ -21,15 +20,17 @@ function Quotes() {
         setLoading(false);
       }
     }
+  useEffect(() => {
+   
     fetchQuote();
   }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-3/12 mx-auto my-10">
-      <p className="py-7 bg-white text-center rounded-xl outline-none w-full">{content}</p>
-      {<p className="py-7 text-center">by {author}</p>}
-      <Button text="Click Here!"/>
-    </div>
+      <p className="py-7 bg-white px-8 text-center rounded-xl outline-none w-full">{content}</p>
+      {<p className="py-7 text-center ">by {author}</p>}
+      <Button onClick={fetchQuote} text="Click Here!"/>
+    </div> 
   );
 }
 
